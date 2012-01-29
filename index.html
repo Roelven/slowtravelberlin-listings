@@ -64,30 +64,6 @@
     background: none !important;
     }
     /* Body text color for the New Yahoo. This example sets the font of Yahoo's Shortcuts to black. */
-    #background-table {
-    background-color: #ececec;
-    }
-    /* Webkit Elements */
-    #top-bar {
-    border-radius: 6px 6px 0px 0px;
-    -moz-border-radius: 6px 6px 0px 0px;
-    -webkit-border-radius: 6px 6px 0px 0px;
-    -webkit-font-smoothing: antialiased;
-    background-color: #043948;
-    color: #e7cba3;
-    }
-    #top-bar a {
-    font-weight: bold;
-    color: #e7cba3;
-    text-decoration: none;
-    }
-    #footer {
-    border-radius: 0px 0px 6px 6px;
-    -moz-border-radius: 0px 0px 6px 6px;
-    -webkit-border-radius: 0px 0px 6px 6px;
-    -webkit-font-smoothing: antialiased;
-    }
-
     /* Fonts and Content */
     body {
     font-family: Georgia, serif;
@@ -244,132 +220,17 @@
             <tr>
               <td class="w640" width="640" height="30" bgcolor="#ffffff"></td>
             </tr>
-            <tr id="simple-content-row"><td class="w640" width="640" bgcolor="#ffffff">
+            <tr id="simple-content-row">
+              <td class="w640" width="640" bgcolor="#ffffff">
 
               <table class="w640" width="640" cellpadding="0" cellspacing="0" border="0">
                 <tbody>
                 <tr>
-                  <td class="w30" width="30"></td>
+                  <td class="w30" width="47"></td>
                   <td class="w580" width="580">
                     <repeater>
-                      <layout label="Text only">
-                        <table class="w580" width="580" cellpadding="0" cellspacing="0" border="0">
-                          <tbody>
-                          <tr>
-                            <td class="w580" width="580">
-                              <p align="left" class="article-title">
-                                <singleline label="Title">Add a title</singleline>
-                              </p>
-                              <div align="left" class="article-content">
-                                <multiline label="Description">Enter your description</multiline>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="w580" width="580" height="10"></td>
-                          </tr>
-                          </tbody>
-                        </table>
-                      </layout>
 
-                      <layout label="Text with full-width image">
-                        <table class="w580" width="580" cellpadding="0" cellspacing="0" border="0">
-                          <tbody>
-                          <tr>
-                            <td class="w580" width="580">
-                              <p align="left" class="article-title">
-                                <singleline label="Title">Add a title</singleline>
-                              </p>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="w580" width="580">
-                              <img editable="true" label="Image" class="w580" width="580" border="0">
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="w580" width="580" height="15"></td>
-                          </tr>
-                          <tr>
-                            <td class="w580" width="580">
-                              <div align="left" class="article-content">
-                                <multiline label="Description">Enter your description</multiline>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="w580" width="580" height="10"></td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </layout>
-
-                    <layout label="Text with right-aligned image">
-                      <table class="w580" width="580" cellpadding="0" cellspacing="0" border="0">
-                        <tbody>
-                          <tr>
-                            <td class="w580" width="580">
-                              <p align="left" class="article-title">
-                                <singleline label="Title">Add a title</singleline>
-                              </p>
-                              <table cellpadding="0" cellspacing="0" border="0" align="right">
-                                <tbody>
-                                <tr>
-                                  <td class="w30" width="15"></td>
-                                  <td>
-                                    <img editable="true" label="Image" class="w300" width="300" border="0">
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td class="w30" width="15" height="5"></td>
-                                  <td></td>
-                                </tr>
-                                </tbody>
-                              </table>
-                              <div align="left" class="article-content">
-                                <multiline label="Description">Enter your description</multiline>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="w580" width="580" height="10"></td>
-                          </tr>
-                          </tbody>
-                        </table>
-                      </layout>
-
-                      <layout label="Text with left-aligned image">
-                        <table class="w580" width="580" cellpadding="0" cellspacing="0" border="0">
-                          <tbody>
-                          <tr>
-                            <td class="w580" width="580">
-                              <p align="left" class="article-title">
-                                <singleline label="Title">Add a title</singleline>
-                              </p>
-                              <table cellpadding="0" cellspacing="0" border="0" align="left">
-                                <tbody><tr>
-                                  <td>
-                                    <img editable="true" label="Image" class="w300" width="300" border="0">
-                                  </td>
-                                  <td class="w30" width="15"></td>
-                                </tr>
-                                <tr>
-                                  <td></td>
-                                  <td class="w30" width="15" height="5"></td>
-                                </tr>
-                              </tbody></table>
-                              <div align="left" class="article-content">
-                                <multiline label="Description">Enter your description</multiline>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="w580" width="580" height="10"></td>
-                          </tr>
-                          </tbody>
-                        </table>
-                      </layout>
-
+                      <!-- TWO COLUMN LAYOUT HERE -->
                       <layout label="Two columns">
                         <table class="w580" width="580" cellpadding="0" cellspacing="0" border="0">
                           <tbody>
@@ -385,8 +246,11 @@
                                     </div>
                                   </td>
                                 </tr>
-                                <tr><td class="w275" width="275" height="10"></td></tr>
-                              </tbody></table>
+                                <tr>
+                                  <td class="w275" width="275" height="10"></td>
+                                </tr>
+                                </tbody>
+                              </table>
                             </td>
                             <td class="w30" width="30"></td>
                             <td class="w275" width="275" valign="top">
@@ -394,7 +258,9 @@
                                 <tbody>
                                 <tr>
                                   <td class="w275" width="275">
-                                    <p align="left" class="article-title"><singleline label="Title">Add a title</singleline></p>
+                                    <p align="left" class="article-title">
+                                      <singleline label="Title">Add a title</singleline>
+                                    </p>
                                     <div align="left" class="article-content">
                                       <multiline label="Description">Enter your description</multiline>
                                     </div>
@@ -413,7 +279,7 @@
 
                     </repeater>
                   </td>
-                  <td class="w30" width="30"></td>
+                  <td class="w30" width="47"></td>
                 </tr>
                 </tbody>
               </table>
@@ -424,13 +290,12 @@
           </tr>
           <tr>
             <td class="w640" width="640" align="center">
-  					  <div style="margin-top:10px;border-top: 1px solid #000000;height:1px;border-bottom:1px solid #000000;margin-bottom:10px"></div>
+              <div style="margin-top:10px;border-top: 1px solid #000000;height:1px;border-bottom:1px solid #000000;margin-bottom:10px"></div>
               <font color="#333333" style="font-size:10px;line-height:1.4">
-                To ensure delivery to your inbox, add us to your address book. If you are unable to see this message, click here to view.<br />
+                To ensure delivery to your inbox, add us to your address book. If this email looks weird, click here to view.<br />
                 If you don't wish to subscribe to our Newsletter please <unsubscribe>unsubscribe here</unsubscribe>.<br />
-                To contact us about anything, please click here  <br />
                 To keep more up to date join our<br />
-                <a style="color:#ed217c;text-decoration: none;" href="http://facebook.com/slowtravelberlin">Facebook</a>  page and/or our <a style="color:#ed217c;text-decoration: none;" href="http://twitter.com/slowberlin">Twitter</a><br />
+                <a style="color:#ed217c;text-decoration: none" href="http://facebook.com/slowtravelberlin" target="_blank">Facebook</a> page and/or our <a style="color:#ed217c;text-decoration: none;" href="http://twitter.com/slowberlin" target="_blank">Twitter</a><br />
                 &copy; 2012 Slow Travel Berlin
               </font>
             </td>
