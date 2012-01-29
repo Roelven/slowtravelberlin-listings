@@ -39,6 +39,12 @@
     br, strong br, b br, em br, i br {
     line-height: 100%;
     }
+    h3.listing-headline {
+      font-weight: normal;
+      font-style: italic;
+      font-size: 24px;
+      margin: 15px 0px 8px 0px;
+    }
     h1, h2, h3, h4, h5, h6 {
     line-height: 100% !important;
     -webkit-font-smoothing: antialiased;
@@ -74,44 +80,34 @@
     -ms-text-size-adjust: none;
     }
     /* Prevent Webkit and Windows Mobile platforms from changing default font sizes on header and footer. */
-    .header-content {
-    font-size: 12px;
-    color: #e7cba3;
-    }
-    .header-content a {
-    font-weight: bold;
-    color: #e7cba3;
-    text-decoration: none;
-    }
     #headline p {
-    color: #e7cba3;
+    color: #000;
     font-size: 36px;
     text-align: center;
     margin-top: 0px;
     margin-bottom: 30px;
     }
     #headline p a {
-    color: #e7cba3;
+    color: #000;
     text-decoration: none;
     }
     .article-title {
     font-size: 18px;
     line-height: 24px;
-    color: #9a9661;
+    color: #000;
     font-weight: bold;
+    font-style:italic;
     margin-top: 0px;
     margin-bottom: 18px;
-    }
-    .article-title a {
-    color: #9a9661;
-    text-decoration: none;
     }
     .article-content {
     font-size: 13px;
     line-height: 18px;
     color: #444444;
     margin-top: 0px;
-    margin-bottom: 18px;
+    margin-bottom: 8px;
+    padding-bottom: 12px;
+    border-bottom: 3px solid #000;
     }
     .article-content a {
     color: #00707b;
@@ -136,46 +132,6 @@
     .article-content p {
     margin-bottom: 15px;
     }
-    .footer-content-left {
-    font-size: 12px;
-    line-height: 15px;
-    color: #e2e2e2;
-    margin-top: 0px;
-    margin-bottom: 15px;
-    }
-    .footer-content-left a {
-    color: #e7cba3;
-    font-weight: bold;
-    text-decoration: none;
-    }
-    .footer-content-right {
-    font-size: 11px;
-    line-height: 16px;
-    color: #e2e2e2;
-    margin-top: 0px;
-    margin-bottom: 15px;
-    }
-    .footer-content-right a {
-    color: #e7cba3;
-    font-weight: bold;
-    text-decoration: none;
-    }
-    #footer {
-    background-color: #043948;
-    color: #e2e2e2;
-    }
-    #footer a {
-    color: #e7cba3;
-    text-decoration: none;
-    font-weight: bold;
-    }
-    #permission-reminder {
-    white-space: pre-wrap;
-    }
-    #street-address {
-    color: #e7cba3;
-    white-space: pre-wrap;
-    }
   </style>
 
 </head>
@@ -187,9 +143,8 @@
         <td align="center" bgcolor="#ececec">
           <table class="w640" width="640" cellpadding="0" cellspacing="0" border="0">
             <tbody>
-              <tr><td class="w640" width="640" height="20"></td></tr>
               <tr>
-                <td id="header" class="w640" width="640" align="center" bgcolor="#00707b">
+                <td id="header" class="w640" width="640" align="center" bgcolor="#ffffff">
                   <table class="w640" width="640" cellpadding="0" cellspacing="0" border="0">
                   <tbody>
                   <tr>
@@ -201,15 +156,18 @@
                     <td class="w30" width="47"></td>
                   </tr>
                   <tr>
-                    <td class="w30" width="47">
+                    <td class="w30" width="47" valign="top">
                       <a href="http://slowtravelberlin.com/" target="_blank">
                         <img src="img/side_header.jpg" width="46" height="337" alt="Slow Travel Listings" />
                       </a>
                     </td>
                     <td class="w580" width="580">
                       <a href="http://slowtravelberlin.com/" target="_blank">
-                        <img src="img/main_header.jpg" width="488" height="337" alt="Slow Travel Listings" />
+                        <img editable="true" label="Header Image" src="img/main_header.jpg" width="488" height="337" alt="Slow Travel Listings" />
                       </a>
+                      <h3 class="listing-headline">
+                        <singleline label="Listing-headline">What's On For Week 19-26 Jan</singleline>
+                      </h3>
                     </td>
                     <td class="w30" width="47"></td>
                   </tr>
@@ -217,57 +175,65 @@
                 </table>
               </td>
             </tr>
-            <tr>
-              <td class="w640" width="640" height="30" bgcolor="#ffffff"></td>
-            </tr>
             <tr id="simple-content-row">
-              <td class="w640" width="640" bgcolor="#ffffff">
+              <td class="w640" width="600" bgcolor="#ffffff">
 
-              <table class="w640" width="640" cellpadding="0" cellspacing="0" border="0">
+              <table class="w640" width="600" cellpadding="0" cellspacing="0" border="0">
                 <tbody>
                 <tr>
                   <td class="w30" width="47"></td>
-                  <td class="w580" width="580">
-                    <repeater>
+                  <td class="w580" width="488">
 
-                      <!-- TWO COLUMN LAYOUT HERE -->
-                      <layout label="Two columns">
-                        <table class="w580" width="580" cellpadding="0" cellspacing="0" border="0">
+                      <layout label="Three columns">
+                        <table class="w580" width="488" cellpadding="0" cellspacing="0" border="0" align="left">
                           <tbody>
                           <tr>
-                            <td class="w275" width="275" valign="top">
-                              <table class="w275" width="275" cellpadding="0" cellspacing="0" border="0">
+                            <td class="w275" width="155" valign="top">
+                              <table class="w275" width="155" cellpadding="0" cellspacing="0" border="1">
                                 <tbody>
                                 <tr>
-                                  <td class="w275" width="275">
-                                    <p align="left" class="article-title"><singleline label="Title">Add a title</singleline></p>
-                                    <div align="left" class="article-content">
-                                      <multiline label="Description">Enter your description</multiline>
-                                    </div>
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td class="w275" width="275" height="10"></td>
-                                </tr>
-                                </tbody>
-                              </table>
-                            </td>
-                            <td class="w30" width="30"></td>
-                            <td class="w275" width="275" valign="top">
-                              <table class="w275" width="275" cellpadding="0" cellspacing="0" border="0">
-                                <tbody>
-                                <tr>
-                                  <td class="w275" width="275">
+                                  <td class="w275" width="155">
                                     <p align="left" class="article-title">
-                                      <singleline label="Title">Add a title</singleline>
+                                      <singleline label="Title">Thursday</singleline>
                                     </p>
                                     <div align="left" class="article-content">
                                       <multiline label="Description">Enter your description</multiline>
                                     </div>
                                   </td>
                                 </tr>
+                                </tbody>
+                              </table>
+                            </td>
+
+                            <td class="w275" width="155" valign="top">
+                              <table class="w275" width="155" cellpadding="0" cellspacing="0" border="1">
+                                <tbody>
                                 <tr>
-                                  <td class="w275" width="275" height="10"></td>
+                                  <td class="w275" width="155">
+                                    <p align="left" class="article-title">
+                                      <singleline label="Title">Sunday</singleline>
+                                    </p>
+                                    <div align="left" class="article-content">
+                                      <multiline label="Description">Enter your description</multiline>
+                                    </div>
+                                  </td>
+                                </tr>
+                                </tbody>
+                              </table>
+                            </td>
+
+                            <td class="w275" width="155" valign="top">
+                              <table class="w275" width="155" cellpadding="0" cellspacing="0" border="1">
+                                <tbody>
+                                <tr>
+                                  <td class="w275" width="155">
+                                    <p align="left" class="article-title">
+                                      <singleline label="Title">More slow</singleline>
+                                    </p>
+                                    <div align="left" class="article-content">
+                                      <multiline label="Description">Enter your description</multiline>
+                                    </div>
+                                  </td>
                                 </tr>
                                 </tbody>
                               </table>
@@ -275,9 +241,9 @@
                           </tr>
                           </tbody>
                         </table>
+
                       </layout>
 
-                    </repeater>
                   </td>
                   <td class="w30" width="47"></td>
                 </tr>
