@@ -106,18 +106,19 @@
       font-size: 10px;
       text-align: right;
       float:right;
+      font-style: italic;
     }
 
     .article-content {
-    font-size: 13px;
-    line-height: 18px;
+    font-size: 12px;
+    line-height: 15px;
     color: #444444;
     margin-top: 0px;
     margin-bottom: 8px;
 
     }
     .article-content a {
-    color: #00707b;
+    color: #ec008c;
     font-weight: bold;
     text-decoration: none;
     }
@@ -145,6 +146,8 @@
       margin: 0px;
       color: #ec008c;
       font-weight: bold;
+      text-transform: uppercase;
+      font-size: 11px;
     }
 
     span.article-category-ampm {
@@ -154,6 +157,36 @@
     .day-container {
       border-bottom: 3px solid #000;
       margin-bottom: 15px;
+    }
+
+    .day-container.last {
+      border-bottom: 0px none;
+    }
+
+    .listing-column {
+      padding: 0px 5px;
+      border-right: 1px solid #c8c7c7;
+    }
+
+    .listing-column.last {
+      border-right: 0px none;
+    }
+
+    .extraslow {
+      background: #eeefef;
+    }
+
+    .extraslow .day-container {
+
+      border-bottom: 1px solid #000;
+    }
+
+    .extraslow .article-title {
+      font-style: normal;
+      font-size: 12px;
+      line-height: 16px;
+
+
     }
   </style>
 
@@ -205,21 +238,21 @@
                   <table class="w640" width="600" cellpadding="0" cellspacing="0" border="0">
                     <tbody>
                       <tr>
-                        <td class="w30" width="47"></td>
-                        <td class="w580" width="488">
+                        <td class="w30" width="42"></td>
+                        <td class="w580" width="492">
 
-                          <table class="w580" width="488" cellpadding="0" cellspacing="0" border="0" align="left">
+                          <table class="w580" width="495" cellpadding="0" cellspacing="0" border="0" align="left">
                             <tbody>
                               <tr>
 
                                 <!-- Column -->
-                                <td class="w275" width="155" valign="top">
+                                <td class="w275 listing-column" width="145" valign="top">
 
                                   <!-- Day -->
-                                  <table class="w275 day-container" width="155" cellpadding="0" cellspacing="0">
+                                  <table class="w275 day-container" width="100%" cellpadding="0" cellspacing="0">
                                     <tbody>
                                       <tr>
-                                        <td class="w275" width="155">
+                                        <td class="w275" width="100%">
                                           <p align="left" class="article-title">
                                             <singleline label="Title">Thursday</singleline>
                                             <span class="article-date">17 Feb</span>
@@ -243,18 +276,260 @@
                                     </tbody>
                                   </table> <!-- /Day -->
 
+                                  <!-- Day -->
+                                  <table class="w275 day-container" width="100%" cellpadding="0" cellspacing="0">
+                                    <tbody>
+                                      <tr>
+                                        <td class="w275" width="100%">
+                                          <p align="left" class="article-title">
+                                            <singleline label="Title">Friday</singleline>
+                                            <span class="article-date">18 Feb</span>
+                                          </p>
+
+                                          <repeater>
+                                            <div align="left" class="article-content">
+                                              <p class="article-category">
+                                                <span class="article-category-ampm">
+                                                  <singleline label="AM/PM">AM:</singleline>
+                                                </span>
+                                                <singleline label="Category">Nightlife</singleline>
+                                              </p>
+
+                                              <multiline label="Description"><p>Watch Raising Resistance, a film about soy growing</p></multiline>
+                                            </div>
+                                          </repeater>
+
+                                          <repeater>
+                                            <div align="left" class="article-content">
+                                              <p class="article-category">
+                                                <span class="article-category-ampm">
+                                                  <singleline label="AM/PM">AM:</singleline>
+                                                </span>
+                                                <singleline label="Category">Nightlife</singleline>
+                                              </p>
+
+                                              <multiline label="Description"><p>Watch Raising Resistance, a film about soy growing</p></multiline>
+                                            </div>
+                                          </repeater>
+
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table> <!-- /Day -->
+
+                                  <!-- Day -->
+                                  <table class="w275 day-container last" width="100%" cellpadding="0" cellspacing="0">
+                                    <tbody>
+                                      <tr>
+                                        <td class="w275" width="100%">
+                                          <p align="left" class="article-title">
+                                            <singleline label="Title">Saturday</singleline>
+                                            <span class="article-date">19 Feb</span>
+                                          </p>
+
+                                          <repeater>
+                                            <div align="left" class="article-content">
+                                              <p class="article-category">
+                                                <span class="article-category-ampm">
+                                                  <singleline label="AM/PM">AM:</singleline>
+                                                </span>
+                                                <singleline label="Category">Nightlife</singleline>
+                                              </p>
+
+                                              <multiline label="Description"><p>Watch Raising Resistance, a film about soy growing</p></multiline>
+                                            </div>
+                                          </repeater>
+
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table> <!-- /Day -->
+
 
                                 </td> <!-- Column -->
 
-                                <td class="w580" width="488">
+                                <!-- Column -->
+                                <td class="w275 listing-column" width="145" valign="top">
 
-                                </td>
+                                  <!-- Day -->
+                                  <table class="w275 day-container" width="100%" cellpadding="0" cellspacing="0">
+                                    <tbody>
+                                      <tr>
+                                        <td class="w275" width="100%">
+                                          <p align="left" class="article-title">
+                                            <singleline label="Title">Thursday</singleline>
+                                            <span class="article-date">17 Feb</span>
+                                          </p>
 
-                                <td class="w580" width="488">
+                                          <repeater>
+                                            <div align="left" class="article-content">
+                                              <p class="article-category">
+                                                <span class="article-category-ampm">
+                                                  <singleline label="AM/PM">AM:</singleline>
+                                                </span>
+                                                <singleline label="Category">Nightlife</singleline>
+                                              </p>
 
-                                </td>
+                                              <multiline label="Description"><p>Watch Raising Resistance, a film about soy growing</p></multiline>
+                                            </div>
+                                          </repeater>
 
-                                <td class="w30" width="47"></td>
+                                          <repeater>
+                                            <div align="left" class="article-content">
+                                              <p class="article-category">
+                                                <span class="article-category-ampm">
+                                                  <singleline label="AM/PM">AM:</singleline>
+                                                </span>
+                                                <singleline label="Category">Nightlife</singleline>
+                                              </p>
+
+                                              <multiline label="Description"><p>Watch Raising Resistance, a film about soy growing</p></multiline>
+                                            </div>
+                                          </repeater>
+
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table> <!-- /Day -->
+
+                                  <!-- Day -->
+                                  <table class="w275 day-container" width="100%" cellpadding="0" cellspacing="0">
+                                    <tbody>
+                                      <tr>
+                                        <td class="w275" width="100%">
+                                          <p align="left" class="article-title">
+                                            <singleline label="Title">Friday</singleline>
+                                            <span class="article-date">18 Feb</span>
+                                          </p>
+
+
+                                          <repeater>
+                                            <div align="left" class="article-content">
+                                              <p class="article-category">
+                                                <span class="article-category-ampm">
+                                                  <singleline label="AM/PM">AM:</singleline>
+                                                </span>
+                                                <singleline label="Category">Nightlife</singleline>
+                                              </p>
+
+                                              <multiline label="Description"><p>Watch Raising Resistance, a film about soy growing</p></multiline>
+                                            </div>
+                                          </repeater>
+
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table> <!-- /Day -->
+
+                                  <!-- Day -->
+                                  <table class="w275 day-container last" width="100%" cellpadding="0" cellspacing="0">
+                                    <tbody>
+                                      <tr>
+                                        <td class="w275" width="100%">
+                                          <p align="left" class="article-title">
+                                            <singleline label="Title">Saturday</singleline>
+                                            <span class="article-date">19 Feb</span>
+                                          </p>
+
+                                          <repeater>
+                                            <div align="left" class="article-content">
+                                              <p class="article-category">
+                                                <span class="article-category-ampm">
+                                                  <singleline label="AM/PM">AM:</singleline>
+                                                </span>
+                                                <singleline label="Category">Nightlife</singleline>
+                                              </p>
+
+                                              <multiline label="Description"><p>Watch Raising Resistance, a film about soy growing</p></multiline>
+                                            </div>
+                                          </repeater>
+
+                                          <repeater>
+                                            <div align="left" class="article-content">
+                                              <p class="article-category">
+                                                <span class="article-category-ampm">
+                                                  <singleline label="AM/PM">AM:</singleline>
+                                                </span>
+                                                <singleline label="Category">Nightlife</singleline>
+                                              </p>
+
+                                              <multiline label="Description"><p>Watch Raising Resistance, a film about soy growing</p></multiline>
+                                            </div>
+                                          </repeater>
+
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table> <!-- /Day -->
+
+
+                                </td> <!-- Column -->
+
+                                <!-- Column -->
+                                <td class="w275 listing-column last" width="145" valign="top">
+
+                                  <table class="extraslow">
+                                    <tbody>
+                                      <tr>
+                                        <td width="142" height="400" style="padding: 0 5px" valign="top">
+                                          <!-- Day -->
+                                          <table class="w275 day-container"  cellpadding="0" cellspacing="0">
+                                            <tbody>
+                                              <tr>
+                                                <td class="w275" width="100%">
+                                                  <p align="left" class="article-title">
+                                                    <singleline label="Title">Extra slow</singleline>
+                                                    <span class="article-date">17-24 Feb</span>
+                                                  </p>
+
+                                                  <repeater>
+                                                    <div align="left" class="article-content">
+                                                      <p class="article-category">
+                                                        <span class="article-category-ampm">
+                                                          <singleline label="AM/PM">AM:</singleline>
+                                                        </span>
+                                                        <singleline label="Category">Nightlife</singleline>
+                                                      </p>
+
+                                                      <multiline label="Description"><p>Watch Raising Resistance, a film about soy growing</p></multiline>
+                                                    </div>
+                                                  </repeater>
+
+                                                </td>
+                                              </tr>
+                                            </tbody>
+                                          </table> <!-- /Day -->
+
+                                          <repeater>
+                                            <!-- Day -->
+                                            <table class="w275 day-container" width="100%" cellpadding="0" cellspacing="0">
+                                              <tbody>
+                                                <tr>
+                                                  <td class="w275" width="100%">
+                                                    <p align="left" class="article-title">
+                                                      <singleline label="Title">Exhibitions</singleline>
+                                                      <span class="article-date">18 Feb</span>
+                                                    </p>
+
+                                                    <div align="left" class="article-content">
+                                                    <p class="article-category">
+                                                          <singleline label="Category">Nightlife</singleline>
+                                                        </p>
+                                                      <multiline label="Description"><p>Click <a href="#">here</a> for info on Berlin’s current exhibitions</p></multiline>
+                                                    </div>
+
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table> <!-- /Day -->
+                                          <repeater>
+
+                                          </div>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+
+                                </table> <!-- Column -->
 
                               </tr>
                             </tbody>
@@ -268,19 +543,30 @@
 
                 </td>
               </tr>
+
               <tr>
-                <td class="w640" width="640" height="15" bgcolor="#ffffff"></td>
-              </tr>
-              <tr>
-                <td class="w640" width="640" align="center" bgcolor="#ffffff">
-                  <div style="margin-top:10px;border-top: 1px solid #000000;height:1px;border-bottom:1px solid #000000;margin-bottom:10px"></div>
-                  <font color="#333333" style="font-size:10px;line-height:1.4">
-                    To ensure delivery to your inbox, add us to your address book. If this email looks weird, click here to view.<br />
-                    If you don't wish to subscribe to our Newsletter please <unsubscribe>unsubscribe here</unsubscribe>. To contact us about anything, please <a style="color:#ed217c;text-decoration: none" href="http://www.slowtravelberlin.com/contact/">click here</a>. <br />
-                    To keep more up to date join our
-                    <a style="color:#ed217c;text-decoration: none" href="http://facebook.com/slowtravelberlin" target="_blank">Facebook</a> page and/or our <a style="color:#ed217c;text-decoration: none;" href="http://twitter.com/slowberlin" target="_blank">Twitter</a><br />
-                    &copy; <currentyear>2012</currentyear> Slow Travel Berlin
-                  </font>
+                <td bgcolor="#ffffff">
+                  <table>
+                    <tr>
+                      <td class="w30" width="47" valign="top">
+
+                      </td>
+                      <td class="w580" width="488" align="center">
+                        <div style="margin-top:10px;border-top: 3px solid #000000;height:1px;"></div>
+                        <br/>
+                        <font color="#333333" style="font-size:9px;line-height:1.4;text-align: center;" >
+                          To ensure delivery to your inbox, add us to your address book. If this email looks weird, click here to view.<br />
+                          If you don't wish to subscribe to our Newsletter please <unsubscribe>unsubscribe here</unsubscribe>.
+                          To contact us about anything, please <a style="color:#ed217c;text-decoration: none" href="http://www.slowtravelberlin.com/contact/">click here</a>. <br />
+                          To keep more up to date join our
+                          <a style="color:#ed217c;text-decoration: none" href="http://facebook.com/slowtravelberlin" target="_blank">Facebook</a> page and/or our <a style="color:#ed217c;text-decoration: none;" href="http://twitter.com/slowberlin" target="_blank">Twitter feed</a>.<br />
+                          &copy; <currentyear>2012</currentyear> Slow Travel Berlin
+                        </font>
+                      </td>
+
+                      <td class="w30" width="47"></td>
+                    </tr>
+                  </table>
                 </td>
               </tr>
               <tr>
