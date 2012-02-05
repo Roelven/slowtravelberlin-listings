@@ -43,8 +43,16 @@
       font-weight: normal;
       font-style: italic;
       font-size: 24px;
-      margin: 15px 0px 8px 0px;
+      margin: 10px 0px 0;
     }
+
+    .listing-header {
+      background: url(img/header-line.gif) repeat-x 0 13px;
+      padding-bottom: 1px;
+      margin-bottom: 15px;
+    }
+
+
     h1, h2, h3, h4, h5, h6 {
     line-height: 100% !important;
     -webkit-font-smoothing: antialiased;
@@ -169,7 +177,7 @@
     }
 
     .listing-column.last {
-      border-right: 0px none;
+      border-right: 0px none #ffffff;
     }
 
     .extraslow {
@@ -185,9 +193,12 @@
       font-style: normal;
       font-size: 12px;
       line-height: 16px;
-
-
     }
+
+    .unsubscribe a {
+      color: #939598;
+    }
+
   </style>
 
 </head>
@@ -200,36 +211,38 @@
           <table class="w640" width="640" cellpadding="0" cellspacing="0" border="0">
             <tbody>
               <tr>
-                <td id="header" class="w640" width="640" align="center" bgcolor="#ffffff">
-                  <table class="w640" width="640" cellpadding="0" cellspacing="0" border="0">
-                    <tbody>
-                      <tr>
-                        <td class="w580" width="580" height="98" colspan="2" target="_blank">
-                          <a href="http://slowtravelberlin.com/">
-                            <img src="img/top_header.jpg" width="534" height="98" alt="" />
-                          </a>
-                        </td>
-                        <td class="w30" width="47"></td>
-                      </tr>
-                      <tr>
-                        <td class="w30" width="47" valign="top">
-                          <a href="http://slowtravelberlin.com/" target="_blank">
-                            <img src="img/side_header.jpg" width="46" height="337" alt="Slow Travel Listings" />
-                          </a>
-                        </td>
-                        <td class="w580" width="580">
-                          <a href="http://slowtravelberlin.com/" target="_blank">
-                            <img editable="true" label="Header Image" src="img/main_header.jpg" width="488" height="337" alt="Slow Travel Listings" />
-                          </a>
-                          <h3 class="listing-headline">
-                            <singleline label="Listing-headline">What's On For Week 19-26 Jan</singleline>
-                          </h3>
-                        </td>
-                        <td class="w30" width="47"></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
+                <td id="header" class="w640" width="640" align="left" bgcolor="#ffffff">
+                  <img src="img/top_header.jpg">
+
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td height="337" valign="top" width="40">
+                      <img src="img/side_header.jpg" alt="">
+                    </td>
+                    <td height="337" valign="top" width="493" align="left">
+                      <img src="img/main_header.jpg" alt="" width="493">
+                    </td>
+                    <td height="337" valign="bottom" align="left">
+                      <img src="img/balloon-right.jpg" alt="">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td valign="top" width="40">&nbsp;</td>
+                    <td valign="top" >
+                      <table width="100%" border="0" cellspacing="0" cellpadding="0" class="listing-header">
+                        <tbody>
+                          <tr>
+                            <td valign="top">
+                              <h3 class="listing-headline"><singleline>Slow Guide for 17-23 Feb, 2012</singleline></h3>
+                            </td>
+                            <td width="90" valign="top"><img src="img/balloon-bottom.gif" alt=""></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                    <td valign="top"><img src="img/balloon-lower-right.jpg" alt=""></td>
+                  </tr>
+                </table></td>
               </tr>
 
               <tr id="simple-content-row">
@@ -255,7 +268,7 @@
                                         <td class="w275" width="100%">
                                           <p align="left" class="article-title">
                                             <singleline label="Title">Thursday</singleline>
-                                            <span class="article-date">17 Feb</span>
+                                            <span class="article-date"><singleline label="date">17 Feb</singleline></span>
                                           </p>
 
                                           <repeater>
@@ -283,21 +296,8 @@
                                         <td class="w275" width="100%">
                                           <p align="left" class="article-title">
                                             <singleline label="Title">Friday</singleline>
-                                            <span class="article-date">18 Feb</span>
+                                            <span class="article-date"><singleline label="date">18 Feb</singleline></span>
                                           </p>
-
-                                          <repeater>
-                                            <div align="left" class="article-content">
-                                              <p class="article-category">
-                                                <span class="article-category-ampm">
-                                                  <singleline label="AM/PM">AM:</singleline>
-                                                </span>
-                                                <singleline label="Category">Nightlife</singleline>
-                                              </p>
-
-                                              <multiline label="Description"><p>Watch Raising Resistance, a film about soy growing</p></multiline>
-                                            </div>
-                                          </repeater>
 
                                           <repeater>
                                             <div align="left" class="article-content">
@@ -324,7 +324,7 @@
                                         <td class="w275" width="100%">
                                           <p align="left" class="article-title">
                                             <singleline label="Title">Saturday</singleline>
-                                            <span class="article-date">19 Feb</span>
+                                            <span class="article-date"><singleline label="date">19 Feb</singleline></span>
                                           </p>
 
                                           <repeater>
@@ -358,7 +358,7 @@
                                         <td class="w275" width="100%">
                                           <p align="left" class="article-title">
                                             <singleline label="Title">Thursday</singleline>
-                                            <span class="article-date">17 Feb</span>
+                                            <span class="article-date"><singleline label="date">17 Feb</singleline></span>
                                           </p>
 
                                           <repeater>
@@ -374,18 +374,6 @@
                                             </div>
                                           </repeater>
 
-                                          <repeater>
-                                            <div align="left" class="article-content">
-                                              <p class="article-category">
-                                                <span class="article-category-ampm">
-                                                  <singleline label="AM/PM">AM:</singleline>
-                                                </span>
-                                                <singleline label="Category">Nightlife</singleline>
-                                              </p>
-
-                                              <multiline label="Description"><p>Watch Raising Resistance, a film about soy growing</p></multiline>
-                                            </div>
-                                          </repeater>
 
                                         </td>
                                       </tr>
@@ -399,7 +387,7 @@
                                         <td class="w275" width="100%">
                                           <p align="left" class="article-title">
                                             <singleline label="Title">Friday</singleline>
-                                            <span class="article-date">18 Feb</span>
+                                            <span class="article-date"><singleline label="date">18 Feb</singleline></span>
                                           </p>
 
 
@@ -428,7 +416,7 @@
                                         <td class="w275" width="100%">
                                           <p align="left" class="article-title">
                                             <singleline label="Title">Saturday</singleline>
-                                            <span class="article-date">19 Feb</span>
+                                            <span class="article-date"><singleline label="date">19 Feb</singleline></span>
                                           </p>
 
                                           <repeater>
@@ -443,6 +431,21 @@
                                               <multiline label="Description"><p>Watch Raising Resistance, a film about soy growing</p></multiline>
                                             </div>
                                           </repeater>
+
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table> <!-- /Day -->
+
+                                   <!-- Day -->
+                                  <table class="w275 day-container last" width="100%" cellpadding="0" cellspacing="0">
+                                    <tbody>
+                                      <tr>
+                                        <td class="w275" width="100%">
+                                          <p align="left" class="article-title">
+                                            <singleline label="Title">Wednesday</singleline>
+                                            <span class="article-date"><singleline label="date">19 Feb</singleline></span>
+                                          </p>
 
                                           <repeater>
                                             <div align="left" class="article-content">
@@ -479,7 +482,7 @@
                                                 <td class="w275" width="100%">
                                                   <p align="left" class="article-title">
                                                     <singleline label="Title">Extra slow</singleline>
-                                                    <span class="article-date">17-24 Feb</span>
+                                                    <span class="article-date"><singleline label="Date">17-24 Feb</singleline></span>
                                                   </p>
 
                                                   <repeater>
@@ -501,28 +504,36 @@
                                           </table> <!-- /Day -->
 
                                           <repeater>
-                                            <!-- Day -->
-                                            <table class="w275 day-container" width="100%" cellpadding="0" cellspacing="0">
-                                              <tbody>
-                                                <tr>
-                                                  <td class="w275" width="100%">
-                                                    <p align="left" class="article-title">
-                                                      <singleline label="Title">Exhibitions</singleline>
-                                                      <span class="article-date">18 Feb</span>
-                                                    </p>
+                                            <layout label="Listing">
+                                              <!-- Day -->
+                                              <table class="w275 day-container" width="100%" cellpadding="0" cellspacing="0">
+                                                <tbody>
+                                                  <tr>
+                                                    <td class="w275" width="100%">
+                                                      <p align="left" class="article-title">
+                                                        <singleline label="Title">Exhibitions</singleline>
+                                                        <span class="article-date"><singleline label="date">18 Feb</singleline></span>
+                                                      </p>
 
-                                                    <div align="left" class="article-content">
-                                                    <p class="article-category">
-                                                          <singleline label="Category">Nightlife</singleline>
-                                                        </p>
-                                                      <multiline label="Description"><p>Click <a href="#">here</a> for info on Berlin’s current exhibitions</p></multiline>
-                                                    </div>
+                                                      <div align="left" class="article-content">
+                                                      <p class="article-category">
+                                                            <singleline label="Category">Nightlife</singleline>
+                                                          </p>
+                                                        <multiline label="Description"><p>Click <a href="#">here</a> for info on Berlin’s current exhibitions</p></multiline>
+                                                      </div>
 
-                                                  </td>
-                                                </tr>
-                                              </tbody>
-                                            </table> <!-- /Day -->
-                                          <repeater>
+                                                    </td>
+                                                  </tr>
+                                                </tbody>
+                                              </table> <!-- /Day -->
+                                            </layout>
+                                            <layout label="Photo">
+                                              <div class="day-container">
+                                                <img editable="true" label="Photo" src="" width="140" height="83" style="width: 100%;" />
+                                                <br>
+                                              </div>
+                                            </layout>
+                                          </repeater>
 
                                           </div>
                                         </td>
@@ -556,7 +567,7 @@
                         <br/>
                         <font color="#333333" style="font-size:9px;line-height:1.4;text-align: center;" >
                           To ensure delivery to your inbox, add us to your address book. If this email looks weird, click here to view.<br />
-                          If you don't wish to subscribe to our Newsletter please <unsubscribe>unsubscribe here</unsubscribe>.
+                          If you don't wish to subscribe to our Newsletter please <span class="unsubscribe"><unsubscribe>unsubscribe here</unsubscribe></span>.
                           To contact us about anything, please <a style="color:#ed217c;text-decoration: none" href="http://www.slowtravelberlin.com/contact/">click here</a>. <br />
                           To keep more up to date join our
                           <a style="color:#ed217c;text-decoration: none" href="http://facebook.com/slowtravelberlin" target="_blank">Facebook</a> page and/or our <a style="color:#ed217c;text-decoration: none;" href="http://twitter.com/slowberlin" target="_blank">Twitter feed</a>.<br />
