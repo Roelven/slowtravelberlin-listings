@@ -40,6 +40,7 @@
     line-height: 100%;
     }
     h3.listing-headline {
+      color: #000000 !important;
       font-weight: normal;
       font-style: italic;
       font-size: 24px;
@@ -47,7 +48,7 @@
     }
 
     .listing-header {
-      background: url(img/header-line.gif) repeat-x 0 13px;
+      background: url(img/header-line.gif) repeat-x 0 0;
       padding-bottom: 1px;
       margin-bottom: 15px;
     }
@@ -56,8 +57,9 @@
     h1, h2, h3, h4, h5, h6 {
     line-height: 100% !important;
     -webkit-font-smoothing: antialiased;
+    color: #000000;
     }
-    h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    h1 a, h2 a, h4 a, h5 a, h6 a {
     color: blue !important;
     }
     h1 a:active, h2 a:active, h3 a:active, h4 a:active, h5 a:active, h6 a:active {
@@ -65,7 +67,7 @@
     }
     /* Preferably not the same color as the normal header link color. There is limited support for psuedo classes in email clients, this was added just for good measure. */
     h1 a:visited, h2 a:visited, h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visited {
-    color: purple !important;
+    color: 000000 !important;
     }
     /* Preferably not the same color as the normal header link color. There is limited support for psuedo classes in email clients, this was added just for good measure. */
     table td, table tr {
@@ -79,9 +81,10 @@
     }
     /* Body text color for the New Yahoo. This example sets the font of Yahoo's Shortcuts to black. */
     /* Fonts and Content */
-    body {
+    #background-table td {
     font-family: Georgia, serif;
     line-height: 1.4;
+    color: black;
     }
     .header-content, .footer-content-left, .footer-content-right {
     -webkit-text-size-adjust: none;
@@ -102,7 +105,7 @@
     .article-title {
     font-size: 18px;
     line-height: 24px;
-    color: #000;
+    color: #000000;
     font-weight: bold;
     font-style:italic;
     margin-top: 0px;
@@ -111,7 +114,7 @@
     }
 
     .article-title a {
-      color: black;
+      color: #000000 !important;
       text-decoration: none;
     }
 
@@ -120,6 +123,7 @@
     }
 
     .article-date {
+      color: #000000;
       font-size: 10px;
       text-align: right;
       float:right;
@@ -180,14 +184,16 @@
       border-bottom: 0px none;
     }
 
+    .listing-column.last {
+      border: 0px none #ffffff !important;
+      border-right: 0px none !important;
+    }
+
     .listing-column {
       padding: 0px 5px;
       border-right: 1px solid #c8c7c7;
     }
 
-    .listing-column.last {
-      border-right: 0px none #ffffff;
-    }
 
     .extraslow {
       background: #eeefef;
@@ -196,16 +202,19 @@
     .extraslow .day-container {
 
       border-bottom: 1px solid #000;
+      margin-bottom: 10px;
     }
 
     .extraslow .article-title {
+      color: #000000 !important;
       font-style: normal;
       font-size: 12px;
       line-height: 16px;
+      padding-top:6px;
     }
 
-    .unsubscribe a {
-      color: #939598;
+    a {
+      color: #ec008c;
     }
 
   </style>
@@ -568,19 +577,19 @@
                 <td bgcolor="#ffffff">
                   <table>
                     <tr>
-                      <td class="w30" width="47" valign="top">
+                      <td class="w30" width="30" valign="top">
 
                       </td>
-                      <td class="w580" width="488" align="center">
+                      <td class="w580" width="500" align="center">
                         <div style="margin-top:10px;border-top: 3px solid #000000;height:1px;"></div>
                         <br/>
                         <font color="#333333" style="font-size:9px;line-height:1.4;text-align: center;" >
                           To ensure delivery to your inbox, add us to your address book. If this email looks weird, click here to view.<br />
-                          If you don't wish to subscribe to our Newsletter please <span class="unsubscribe"><unsubscribe>unsubscribe here</unsubscribe></span>.
+                          If you don't wish to subscribe to our Newsletter please <unsubscribe style="color: #ec008c;">unsubscribe here</unsubscribe>.
                           To contact us about anything, please <a style="color:#ed217c;text-decoration: none" href="http://www.slowtravelberlin.com/contact/">click here</a>. <br />
                           To keep more up to date join our
                           <a style="color:#ed217c;text-decoration: none" href="http://facebook.com/slowtravelberlin" target="_blank">Facebook</a> page and/or our <a style="color:#ed217c;text-decoration: none;" href="http://twitter.com/slowberlin" target="_blank">Twitter feed</a>.<br />
-                          &copy; <currentyear>2012</currentyear> Slow Travel Berlin
+                          &copy; <currentyear></currentyear> Slow Travel Berlin
                         </font>
                       </td>
 
