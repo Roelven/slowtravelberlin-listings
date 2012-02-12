@@ -50,7 +50,11 @@
     .listing-header {
       background: url(img/header-line.gif) repeat-x 0 0;
       padding-bottom: 1px;
-      margin-bottom: 15px;
+      margin-bottom: 10px;
+    }
+
+    .last-day {
+      margin-bottom: -15px;
     }
 
 
@@ -110,7 +114,8 @@
     font-style:italic;
     margin-top: 0px;
     margin-bottom: 10px;
-    border-bottom: dashed 1px #ccc;
+
+    background: url(img/header-line.gif) repeat-x 0 100%;
     }
 
     .article-title a {
@@ -128,6 +133,7 @@
       text-align: right;
       float:right;
       font-style: italic;
+      font-weight: normal;
     }
 
     .article-content {
@@ -135,7 +141,7 @@
     line-height: 15px;
     color: #444444;
     margin-top: 0px;
-    margin-bottom: 8px;
+    margin-bottom: 15px;
 
     }
     .article-content a {
@@ -159,7 +165,7 @@
     text-decoration: underline;
     }
     .article-content p {
-    margin-bottom: 15px;
+    margin-bottom: 0;
     margin-top: 0;
     }
 
@@ -168,7 +174,8 @@
       color: #ec008c;
       font-weight: bold;
       text-transform: uppercase;
-      font-size: 11px;
+      font-size: 9px;
+      line-height: 11px;
     }
 
     span.article-category-ampm {
@@ -178,20 +185,15 @@
     .day-container {
       border-bottom: 3px solid #000;
       margin-bottom: 15px;
-    }
 
-    .day-container.last {
-      border-bottom: 0px none;
-    }
-
-    .listing-column.last {
-      border: 0px none #ffffff !important;
-      border-right: 0px none !important;
     }
 
     .listing-column {
       padding: 0px 5px;
-      border-right: 1px solid #c8c7c7;
+    }
+
+    .columnBorder {
+      border-right: 1px solid #c8c7c7 !important;
     }
 
 
@@ -269,18 +271,18 @@
                   <table width="570" cellpadding="0" cellspacing="0" border="0">
                     <tbody>
                       <tr>
-                        <td class="w30" width="30"></td>
+                        <td class="w30" width="35"></td>
                         <td width="492">
 
-                          <table width="510" cellpadding="0" cellspacing="0" border="0" align="left">
+                          <table width="500" cellpadding="0" cellspacing="0" border="0" align="left">
                             <tbody>
                               <tr>
 
                                 <!-- Column -->
-                                <td class=" listing-column border" width="145" valign="top">
+                                <td class="listing-column columnBorder" width="145" valign="top">
 
                                   <!-- Day -->
-                                  <table class=" day-container" width="100%" cellpadding="0" cellspacing="0">
+                                  <table class="day-container" width="100%" cellpadding="0" cellspacing="0">
                                     <tbody>
                                       <tr>
                                         <td width="100%">
@@ -308,7 +310,7 @@
                                   </table> <!-- /Day -->
 
                                   <!-- Day -->
-                                  <table class=" day-container" width="100%" cellpadding="0" cellspacing="0">
+                                  <table class="day-container" width="100%" cellpadding="0" cellspacing="0">
                                     <tbody>
                                       <tr>
                                         <td width="100%">
@@ -336,6 +338,8 @@
                                   </table> <!-- /Day -->
 
                                   <!-- Day -->
+                                  <!-- No day-container class here cause it's the last in this column -->
+                                  <table class="last-day" width="100%" cellpadding="0" cellspacing="0">
                                     <tbody>
                                       <tr>
                                         <td width="100%">
@@ -366,10 +370,10 @@
                                 </td> <!-- Column -->
 
                                 <!-- Column -->
-                                <td class=" listing-column border" width="145" valign="top">
+                                <td class="listing-column columnBorder" width="145" valign="top">
 
                                   <!-- Day -->
-                                  <table class=" day-container" width="100%" cellpadding="0" cellspacing="0">
+                                  <table class="day-container" width="100%" cellpadding="0" cellspacing="0">
                                     <tbody>
                                       <tr>
                                         <td width="100%">
@@ -391,14 +395,13 @@
                                             </div>
                                           </repeater>
 
-
                                         </td>
                                       </tr>
                                     </tbody>
                                   </table> <!-- /Day -->
 
                                   <!-- Day -->
-                                  <table class=" day-container" width="100%" cellpadding="0" cellspacing="0">
+                                  <table class="day-container" width="100%" cellpadding="0" cellspacing="0">
                                     <tbody>
                                       <tr>
                                         <td width="100%">
@@ -427,7 +430,7 @@
                                   </table> <!-- /Day -->
 
                                   <!-- Day -->
-                                  <table class=" day-container last" width="100%" cellpadding="0" cellspacing="0">
+                                  <table class="day-container" width="100%" cellpadding="0" cellspacing="0">
                                     <tbody>
                                       <tr>
                                         <td width="100%">
@@ -455,6 +458,8 @@
                                   </table> <!-- /Day -->
 
                                    <!-- Day -->
+                                  <!-- No day-container class here cause it's the last in this column -->
+                                  <table class="last-day" width="100%" cellpadding="0" cellspacing="0">
                                     <tbody>
                                       <tr>
                                         <td width="100%">
@@ -485,14 +490,14 @@
                                 </td> <!-- Column -->
 
                                 <!-- Column -->
-                                <td class=" listing-column last" width="145" valign="top">
+                                <td class="listing-column last" width="145" valign="top">
 
                                   <table class="extraslow">
                                     <tbody>
                                       <tr>
-                                        <td width="142" height="400" style="padding: 0 5px" valign="top">
+                                        <td width="142" style="padding: 0 5px" valign="top">
                                           <!-- Day -->
-                                          <table class=" day-container"  cellpadding="0" cellspacing="0">
+                                          <table class="day-container"  cellpadding="0" cellspacing="0">
                                             <tbody>
                                               <tr>
                                                 <td width="100%">
@@ -519,35 +524,53 @@
                                             </tbody>
                                           </table> <!-- /Day -->
 
+                                          <!-- Day -->
+                                          <table class="day-container" width="100%" cellpadding="0" cellspacing="0">
+                                            <tbody>
+                                              <tr>
+                                                <td width="100%">
+                                                  <p align="left" class="article-title">
+                                                    <singleline label="Title">Exhibitions</singleline>
+                                                  </p>
+
+                                                  <div align="left" class="article-content">
+                                                    <multiline label="Description"><p>Click <a href="#">here</a> for info on Berlin’s current exhibitions</p></multiline>
+                                                  </div>
+
+                                                </td>
+                                              </tr>
+                                            </tbody>
+                                          </table> <!-- /Day -->
                                           <repeater>
-                                            <layout label="Listing">
-                                              <!-- Day -->
-                                              <table class=" day-container" width="100%" cellpadding="0" cellspacing="0">
-                                                <tbody>
-                                                  <tr>
-                                                    <td width="100%">
-                                                      <p align="left" class="article-title">
-                                                        <singleline label="Title">Exhibitions</singleline>
-                                                        <span class="article-date"><singleline label="date">18 Feb</singleline></span>
-                                                      </p>
-
-                                                      <div align="left" class="article-content">
-                                                        <multiline label="Description"><p>Click <a href="#">here</a> for info on Berlin’s current exhibitions</p></multiline>
-                                                      </div>
-
-                                                    </td>
-                                                  </tr>
-                                                </tbody>
-                                              </table> <!-- /Day -->
-                                            </layout>
                                             <layout label="Photo">
-                                              <div class="day-container">
+                                              <div class="">
                                                 <img editable="true" label="Photo" src="" width="140" height="83" style="width: 100%;" />
-                                                <br>
                                               </div>
                                             </layout>
                                           </repeater>
+                                            <!-- Day -->
+                                            <table class="" width="100%" cellpadding="0" cellspacing="0">
+                                              <tbody>
+                                                <tr>
+                                                  <td width="100%">
+                                                    <p align="left" class="article-title">
+                                                      <singleline label="Title">From The Archives</singleline>
+                                                    </p>
 
+                                                    <repeater>
+                                                      <div align="left" class="article-content">
+                                                        <p class="article-category">
+                                                          <singleline label="Category">Exploration</singleline>
+                                                        </p>
+
+                                                        <multiline label="Description"><p>A profile of Berlin's bunker scene by Swedish architect and author Fredrik Torisson</p></multiline>
+                                                      </div>
+                                                    </repeater>
+
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table> <!-- /Day -->
                                           </div>
                                         </td>
                                       </tr>
@@ -572,7 +595,7 @@
                 <td bgcolor="#ffffff">
                   <table>
                     <tr>
-                      <td class="w30" width="30" valign="top">
+                      <td class="w30" width="35" valign="top">
 
                       </td>
                       <td width="500" align="center">
