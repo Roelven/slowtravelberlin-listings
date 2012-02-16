@@ -115,7 +115,7 @@
     margin-top: 0px;
     margin-bottom: 10px;
 
-    background: url(img/header-line.gif) repeat-x 0 100%;
+    border-bottom: dashed 1px #ccc;
     }
 
     .article-title a {
@@ -541,15 +541,8 @@
                                               </tr>
                                             </tbody>
                                           </table> <!-- /Day -->
-                                          <repeater>
-                                            <layout label="Photo">
-                                              <div class="">
-                                                <img editable="true" label="Photo" src="" width="140" height="83" style="width: 100%;" />
-                                              </div>
-                                            </layout>
-                                          </repeater>
                                             <!-- Day -->
-                                            <table class="" width="100%" cellpadding="0" cellspacing="0">
+                                            <table class="day-container" width="100%" cellpadding="0" cellspacing="0">
                                               <tbody>
                                                 <tr>
                                                   <td width="100%">
@@ -571,6 +564,13 @@
                                                 </tr>
                                               </tbody>
                                             </table> <!-- /Day -->
+                                            <repeater>
+                                            <layout label="Photo">
+                                              <div class="">
+                                                <img editable="true" label="Photo" src="" width="140" height="83" style="width: 100%;" />
+                                              </div>
+                                            </layout>
+                                          </repeater>
                                           </div>
                                         </td>
                                       </tr>
